@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+</head>
+<style>
+    .main{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        background-color: rgba(30, 18, 65);
+        margin-top: 50px;
+    }
+    .form{
+        /* border: 2px solid black; */
+        background-color: white;
+        text-align: center;
+        padding:5px 25px;
+        width:350px;
+        border-radius: 5px;
+    }
+    
+    .form .box button{
+        padding: 10px;
+        background-color: white;
+        border:1px solid rgb(190, 190, 190);
+        box-shadow: 1px 1px 4px #857e7e;
+        width: 108px;
+        height:50px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    input{
+        padding: 15px;
+        width:290px;
+    }
+    .form #p{
+        border-top: 1px solid gray;
+        padding-top: 20px;
+        text-align: left;
+    }
+    #or::before, #or::after{
+        content: " \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 \00a0 \00a0 \00a0    \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0       \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0  \00a0  \00a0 ";
+        text-decoration: line-through;
+    }
+    .form #but{
+        margin: 10px;
+        padding: 16px;
+        background-color: #856efffc;
+        color: white;
+        width: 330px;
+        border-radius: 5px;
+        margin-bottom: 26px;
+        border:none;
+    }
+    .container{
+        /* border: 2px solid red; */
+        margin-top:-30px;
+        width: 515px;
+    }
+    .container h1{
+        color: white;
+        font-size: 55px;
+    }
+    .content{
+        font-size: 21px;
+        color: rgb(160, 156, 156);
+    }
+    .container i{
+        color:rgb(244, 138, 110);
+    }
+    .container p{
+        color: rgb(160, 156, 156);
+    }
+    .container button{
+        margin: 20px 0px;
+        padding:15px;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Become a Vanilla JavaScript Developer</h1>
+            <p class="content">In this tutorial, we are going to learn about javascript      (Vanilla JS)- for building incridible, powerful javascript  applictions.</p>
+            <p><i class="fal fa-clock"></i> &nbsp;   4 Hours</p>
+            <p><i class="fal fa-video"></i>   &nbsp; 12 Videos</p>
+            <p><i class="fal fa-user-friends"></i>  &nbsp; 10,234+ Enrolled</p>
+            <button>Watch Preview</button>
+        </div>
+
+        <div class="form">
+            <h2 style="text-align: left; padding-left: 10px;">Create Free Account</h2>
+           <div class="box">
+               <button>
+                   <span ><i class="fab fa-google"style="color: red;"></i> Google</span>
+               </button>
+         
+              <button> 
+                  <span> <i class="fab fa-twitter"style="color: blue;"></i> Twitter</span>
+                </button>
+
+               <button>
+                   <span><i class="fab fa-facebook" style="color: darkblue;"></i> Facebook</span>
+                </button>
+           </div>
+
+           <span id="or" style="color: #857e7e; font-size: 12px;">OR</span>
+
+           <form action="form.php"></form>
+           <p>
+               <input type="email" placeholder="Email">
+        </p>
+           <p>
+                <input type="password" placeholder="Password">
+           </p>
+
+           <button id="but">Start Course for Free</button>
+           <p id="p">By continuing you accept the <strong>Terms of Uses, Privacy Policy</strong>, and <strong>Data Policy</strong></p>
+        </div>
+    </div>
+</body>
+</html>

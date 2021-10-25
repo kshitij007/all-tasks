@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+
+    <style>
+        :root{
+            --position : center;
+            --primary-color : #7741fb;
+            --secondary-color : #000000c7;
+        }
+        body{
+            width:700px;
+            /* border:2px solid black; */
+            margin: 30px auto;
+            padding: 10px 50px;
+        }
+        .first-heading{
+            text-align: var(--position);
+            color: var(--primary-color);
+            margin-bottom: -17px;
+        }
+        .main-heading{
+            text-align: var(--position);
+            font-size: 22px;
+            margin: 0px;
+        }
+        .header-content{
+            text-align: var(--position);
+            color: var(--secondary-color);
+            padding: 0px 74px;
+            font-size: 20px;
+            margin-top: -12px;
+            margin-bottom: 60px;
+        }
+
+        .accordion{
+            margin: 0px 83px;
+            
+        }
+        .accordion-button{
+            font-size: 18px;
+            width:525px;
+            padding: 15px 0px;
+            font-weight: bold;
+            text-align: left;
+            background-color: white;
+            border: none;
+            border-bottom: 1px solid #00000036;
+        }
+        .accordion-body{
+            color: var(--secondary-color);
+            font-size: 18px;
+            padding-right: 50px;
+        }
+       
+        .active{
+            color: var(--primary-color);
+        }
+        .no-bottom-border{
+            border: none;
+        }
+        .sign1{
+            position: relative;
+            color: var(--primary-color);
+            margin-left: 190px;
+        }
+        .sign2{
+            position: relative;
+            color: var(--primary-color);
+             margin-left: 215px;
+        }
+        .sign3{
+            position: relative;
+            color: var(--primary-color);
+            margin-left: 150px;
+        }
+        .sign4{
+            position: relative;
+            color: var(--primary-color);
+            margin-left: 95px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="first-heading"> <h4> NEED TO KNOW   </h4> </div>
+        <div class="main-heading"> <h1> Frequently Asked Questions. </h1> </div>
+        <div class="header-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sunt consequuntur inventore iste esse ad nihil.
+            </p> 
+        </div>
+    </header>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button active">What is the cost of an online course 
+                        <i class="fal fa-times sign1"></i>
+                    </button>
+                </h2>
+                <div class="accordion-body">
+                    <p>Create beatuiful website using Geeks UI template. Get started building a site today.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button">What do I need to take a course?
+                        <i class="fal fa-plus sign2"></i>
+                    </button>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button">What do I recieve for taking this course?
+                        <i class="fal fa-plus sign3"></i>
+                    </button>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button no-bottom-border">What will I get if I  subscribe for this certificate?
+                        <i class="fal fa-plus sign4"></i>
+                    </button>
+                </h2>
+            </div>
+        </div>
+</body>
+</html>

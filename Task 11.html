@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <style>
+
+        :root{
+            --primary-color:rgb(117,79,254);
+            --secondary-color: white;
+            --extra-info-margin: 0px 30px;
+            --button-padding: 15px 50px;
+            --button-margin: 10px 20px;
+            --shadow: 1px 1px 2px white;
+        }
+       
+        .main-container{
+            padding: 0px 120px;
+        }
+        .main-container::before{
+            content: "";
+            background-color: var(--primary-color);
+            /* background-color: rgb(223, 221, 221); */
+            position: absolute;
+            top:15px;
+            left: 0px;
+            height: 360px;
+            width: 100%;
+            z-index: -1;
+        }
+        .sub-container::before{
+            content: "";
+            /* background-color: var(--primary-color); */
+            background-color: rgb(223, 221, 221);
+            position: absolute;
+            top:360px;
+            left: 0px;
+            height: 232px;
+            width: 100%;
+            z-index: -1;
+        }
+       
+        /* header */
+        .header{
+            /* border: 2px solid black; */
+            /* background-color: var(--primary-color); */
+            color: var(--secondary-color);
+            width: 630px;
+        }
+        .header-heading{
+            font-size: 44px;
+            margin-bottom: 0px;
+        }
+        .header-content{
+            margin-top: 10px;
+            font-size: 22px;
+        }
+        .extra-info{
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .enroll{
+            margin: var(--extra-info-margin);
+        }
+        .icons-margin{
+            margin: 0px 5px;
+        }
+        .stars{
+            margin: var(--extra-info-margin);
+            margin-left: 0px;
+        }
+        .star-icon{
+            color: orange;
+            font-size: 10px;
+            margin-left: 0px;
+        }
+        .level{
+            margin: var(--extra-info-margin);
+            margin-left: 0px;
+        }
+
+/* sub-container starts here */
+        .sub-container{
+            display:flex;
+            margin-top: 60px;
+        }
+
+        .content-panel{
+            /* border: 2px solid black; */
+            width: 700px;
+            height: 310px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .panel-navBar{
+            display: flex;
+            /* border: 2px solid red; */
+            font-size: 14px;
+            border-bottom: 1px solid silver;
+        }
+       .panel-navBar li{
+           padding-left: 5px;
+           padding-right: 2px;
+           margin-right: 60px;
+            list-style: none;  
+            color: rgb(95, 88, 88);
+       }
+       .panel-navBar .contents{
+        margin-left: -30px;
+        padding-bottom: 14px;
+        border-bottom: 3px solid var(--primary-color);
+        color: var(--primary-color);
+       }
+      .panel-heading{
+          /* border: 2px solid blue; */
+          padding: 0px 15px;
+      }
+       .open-and-close-button{
+           position: absolute;
+           right:555px;
+           font-size: 12px;
+       }
+
+       .panel-content{
+           padding: 0px 15px;
+       }
+
+       .panal-play-button{
+           font-size: 25px;
+           margin-right: 5px;
+           padding: 5px 13px;
+           border-radius: 30px;
+           color: var(--primary-color);
+           background-color: rgb(212, 206, 206);
+           text-align: center;
+       }
+       .alingment{
+           position: relative;
+           top: -5px;
+       }
+       .time-limit{
+           position: relative;
+           top: -9px;
+           left:345px
+       }
+        .additional-margin1{
+            left:485px;
+        }
+        .additional-margin2{
+            left:427px;
+        }
+
+       /* buy-course */
+
+
+        .buy-course{
+            /* border: 2px solid gold; */
+            width: 310px;
+            margin-left: 20px;
+            position: relative;
+            top:-100px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+       
+        .logo{
+            height: 177px;
+           padding: 5px;
+           border-radius: 15px;
+        }
+      
+        .buy-course-play-button{
+            font-size: 25px;
+            position: relative;
+            top: -120px;
+            left: 135px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border-radius: 25px;
+            /* border: 2px solid black; */
+            padding-top: 10px;
+            width: 45px;
+            height: 35px;
+            text-align: center;
+        }
+        .price{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: -30px;
+            margin-bottom:5px;
+            margin-left: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .cuted-price{
+            color: rgb(95, 88, 88);
+            font-size: 18px;
+            z-index: -1;
+            font-weight: normal;
+        }
+        .start-for-free{
+            width: 270px;
+            padding:var(--button-padding);
+            margin: var(--button-margin);
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: none;
+            border-radius: 5px;
+        }
+
+        .get-full-access{
+            width: 270px;
+            padding:var(--button-padding);
+            margin: var(--button-margin);
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="header-items">
+                <h1 class="header-heading">Getting Started with JavaScript</h1>
+
+                <p class="header-content"> JavaScript is a popular programming language which powers web pages and web applications. This course will help you started coding in JavaScript.</p>
+                
+                <div class="extra-info">
+                    <span class="bookmark"> <i class="far fa-bookmark bookmark-icon icons-margin"></i>   Bookmark</span>
+                    <span class="enroll"><i class="fal fa-user-alt enroll-icon icons-margin" ></i>   1200 Enrolled</span>
+                    <span class="stars"> <i class="fas fa-star star-icon"></i> <i class="fas fa-star star-icon"></i> <i class="fas fa-star star-icon"></i> <i class="fas fa-star star-icon"></i> <i class="fas fa-star star-icon icons-margin"></i>   (140)</span>
+                    <span class="level"> <i class="fas fa-signal-alt-3 level-icon icons-margin"></i> Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-container">
+
+        <div class="content-panel">
+            <div class="panel-items">
+                
+                    <ul class="panel-navBar">
+                    <li class="contents">Contents</li>                    
+                    <li class="description">Description</li>
+                    <li class="review">Reviews</li>
+                    <li class="transcript">Transcript</li>
+                    <li class="faq">FAQ</li>
+                </ul>
+                
+
+                <h3 class="panel-heading">Introduction to JavaScript <i class="fas fa-chevron-up open-and-close-button"></i></h3>
+                
+                <div class="panel-content">
+                    <p class="introduction"> <i class="fas fa-caret-right panal-play-button"></i> <span class="alingment"> Introduction </span> <span class="time-limit additional-margin1">1m 7s</span></p>
+                    <p class="install"> <i class="fas fa-caret-right panal-play-button"></i> <span class="alingment"> Installing Development Software </span> <span class="time-limit alingment">3m 11s</span></p>
+                    <p class="github-project"> <i class="fas fa-caret-right panal-play-button"></i> <span class="alingment"> Hello World Project from GitHub </span> <span class="time-limit alingment">2m 33s</span></p>
+                    <p class="sample-project"> <i class="fas fa-caret-right panal-play-button"></i> <span class="alingment"> Our Sample Website </span> <span class="time-limit alingment additional-margin2">2m 15s</span></p>
+                </div>    
+            </div>
+        </div>
+        
+        <div class="buy-course">
+            <div class="buy-course-items">
+                <div class="course-logo">
+                    <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-javascript.jpg" alt="" class="logo">
+                    <i class="fal fa-caret-right buy-course-play-button"></i>
+                    
+                </div>
+
+                <p class="price"> $600 <del class="cuted-price">$750</del></p>
+                <button class="start-for-free">Start Free Month</button>
+                <button class="get-full-access">Get Full Access</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+
+    <style>
+        .main{
+            border: 2px solid rgb(240, 238, 238);
+            background: rgb(240, 238, 238);
+            margin-top: 60px;
+        }
+
+        .container{
+            display:flex;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+        }
+        .box{
+            /* border: 2px solid black; */
+            width: 270px;
+            border-radius: 15px;
+            background-color: whitesmoke;
+        }
+        .minbox{
+            border:2px solid rgb(253, 253, 199);
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHUSWffdG4o9jx4uxt7gSXHBXrCUqeCjSDnw&usqp=CAU');
+            opacity: 5;
+            border-top-right-radius:15px ;
+            border-top-left-radius:15px ;
+
+        }
+        .minbox img{
+            height:50px;
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+        .minbox p{
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+        .box :nth-child(2){
+            font-weight: bold;
+        }
+
+        .box :nth-child(3){
+            color: rgb(119, 115, 115);
+        }
+       .box p{
+        padding-left : 15px;
+        padding-right: 10px;
+
+       }
+        .fade{
+            color: rgb(182, 174, 174);
+        }
+       .star{
+           color:goldenrod;
+       }
+.bott{
+    border-top: 1px solid rgb(187, 186, 186);
+
+}
+       .bott img{
+        height:20px;
+        width: 20px;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-top: 10px;
+       }
+       
+       .bott i{
+           position: relative;
+           left:110px;
+           color: gray;
+       }
+        #book{
+           position: relative;
+           left:80px;
+       }
+       h1,h4{
+           margin-left: 55px;
+           margin-bottom: 0px;
+       }
+       h4{
+           margin-top: 0px;
+        color: rgb(88, 84, 84);
+        margin-bottom: 30px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Free JavaScript lessons</h1>
+        <h4>Bite-sized learning in minutes</h4>
+        <div class="container">
+            <div class="box">
+                <div class="minbox">
+                    <img src="exercise\exercise\item2/jslogo.png" alt=""> 
+                    <p>JavaScript</p>
+                </div>
+                <p>Creating a Custom Event in Javascript</p>
+                <p class="minfade"> &#128339; &nbsp; 3h 56m &nbsp;<span><i class="fad fa-signal-alt-1"style="color:darkblue;"></i></span>
+                    &nbsp; Beginner</p>
+                <p><span class="star">  &#9733;  &#9733;  &#9733;  &#9733;  &#9733; 4.5</span> <span class="fade"> (9,300)</span></p>
+                <p class="bott"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCB0uM_OizIKN8VkGzv7gqCLbT3lbNSm9DRw&usqp=CAU" alt="">Morris Mccoy<span><i class="far fa-bookmark"></i></span></p>
+            </div>
+
+            <div class="box">
+                 <div class="minbox">
+                    <img src="exercise\exercise\item2/jslogo.png" alt=""> 
+                    <p>JavaScript</p>
+                </div>
+                <p>Modewrn Javascript Beginner Tutorial - Simple</p>
+                 <p class="minfade"> &#128339; &nbsp; 4h 56m &nbsp;<span><i class="fad fa-signal-alt-1"style="color:darkblue;"></i></span>
+                    &nbsp; Advance</p>
+                <p><span class="star"> &#9733;  &#9733;  &#9733;  &#9733;  &#9733; 4.5 </span> <span class="fade">(7,800)</span></p>
+                <p class="bott"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCB0uM_OizIKN8VkGzv7gqCLbT3lbNSm9DRw&usqp=CAU" alt="">Ted Hawkins<span><i class="far fa-bookmark"></i></span></p>
+            </div>
+
+            <div class="box">
+                 <div class="minbox">
+                    <img src="exercise\exercise\item2/jslogo.png" alt=""> 
+                    <p>JavaScript</p>
+                </div>
+                <p>Appliying Javascript and using the console</p>
+                 <p class="minfade"> &#128339; &nbsp; 1h 30m &nbsp;<span><i class="fad fa-signal-alt-1"style="color:darkblue;"></i></span>
+                    &nbsp; Beginner</p>
+                <p><span class="star"> &#9733;  &#9733;  &#9733;  &#9733;  &#9733; 4.5 </span> <span class="fade">(8,245)</span></p>
+                <p class="bott"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCB0uM_OizIKN8VkGzv7gqCLbT3lbNSm9DRw&usqp=CAU" alt="">Juanita Bell<span><i class="far fa-bookmark"></i></span></p>
+            </div>
+
+            <div class="box">
+                 <div class="minbox">
+                    <img src="exercise\exercise\item2/jslogo.png" alt=""> 
+                    <p>JavaScript</p>
+                </div>
+                <p>Creating functions, using them, parssing data in and</p>
+                 <p class="minfade"> &#128339; &nbsp; 2h 30m &nbsp;<span><i class="fad fa-signal-alt-2" style="color:darkblue;"></i></span>
+                    &nbsp; Intermidate</p>
+                <p><span class="star"> &#9733;  &#9733;  &#9733;  &#9733;  &#9733; 4.5 </span> <span class="fade">(3,245)</span></p>
+                <p class="bott"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCB0uM_OizIKN8VkGzv7gqCLbT3lbNSm9DRw&usqp=CAU" alt="">Claire Robertson<span><i id="book" class="far fa-bookmark"></i></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

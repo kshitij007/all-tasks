@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --primary-color: #756e6e;
+      --whites: white;
+    }
+
+    .mainbox {
+      background-color: rgb(135 131 131 / 15%);
+      padding: 10px 60px;
+      margin-top: 60px;
+    }
+
+    .instructor-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+      /* border:2px solid black; */
+      height: 350px;
+      margin: 40px 0px;
+    }
+
+    .instructor-box-item {
+      /* border: 2px solid red; */
+      width: 250px;
+      font-weight: bold;
+      align-items: center;
+      background-color: var(--whites);
+      border-radius: 10px;
+      box-shadow: 1px 1px 2px var(--whites);
+      box-shadow: -1px -1px 2px var(--whites);
+      padding: 10px;
+    }
+
+    .instructor-image {
+      height: 100px;
+      width: 100px;
+      border-radius: 200px;
+      margin-left: 80px;
+      margin-top: 10px;
+    }
+
+    .instructor-name,
+    .instructor-position {
+      line-height: 2px;
+      text-align: center;
+    }
+
+    .instructor-position {
+      color: #c7c6c6;
+      margin-bottom: 40px;
+    }
+
+    .students,
+    .rating {
+      padding-bottom: 10px;
+    }
+
+    .student-margin {
+      margin-left: 140px;
+    }
+
+    .rating-margin {
+      margin-left: 90px;
+    }
+
+    .courses-margin {
+      margin-left: 165px;
+    }
+
+    .left-item-color {
+      color: var(--primary-color);
+    }
+
+    .rating-color {
+      color: orange;
+    }
+
+    .sub-heading {
+      line-height: 0px;
+      color: var(--primary-color);
+    }
+
+    .main-heading,
+    .sub-heading {
+      margin-left: 30px;
+    }
+
+    .border-bottom {
+      border: 2px solid rgba(207, 205, 205, 0.897);
+      border-width: 0px 0px 1px;
+    }
+
+    p,
+    .instructor-position {
+      font-weight: lighter;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mainbox">
+    <div class="mainbox-items">
+
+      <h1 class="main-heading">Popular Instructors</h1>
+      <h4 class="sub-heading">Popular instructor in JavaScript Courses</h4>
+
+    </div>
+
+    <div class="instructor-box">
+      <div class="instructor-box-item">
+
+        <img src="https://i.ibb.co/WH6jcBh/avatar-11.jpg" alt="" class="instructor-image">
+        <h3 class="instructor-name">Wade Warren</h3>
+        <h5 class="instructor-position">Web Developer,Designer</h5>
+        <p class="students border-bottom"> <span class="left-item-color"> Students </span> <span class="student-margin">
+            50,274 </span> </p>
+        <p class="rating border-bottom"> <span class="left-item-color">Instructor Rating </span>
+          <span class="rating-color rating-margin"> 4.5 &#9733; </span>
+        </p>
+        <p class="courses"> <span class="left-item-color">Courses</span> <span class="courses-margin"> 12 </span> </p>
+
+      </div>
+
+      <div class="instructor-box-item">
+
+        <img src="https://i.ibb.co/kmSrg8k/avatar-13.jpg" alt="" class="instructor-image">
+        <h3 class="instructor-name">Dianna Smiley</h3>
+        <h5 class="instructor-position">Engineering Architect</h5>
+        <p class="students border-bottom"> <span class="left-item-color"> Students </span> <span class="student-margin">
+            1,004 </span> </p>
+        <p class="rating border-bottom"> <span class="left-item-color"> Instructor Rating </span>
+          <span class="rating-color  rating-margin"> 4.5 &#9733; </span>
+        </p>
+        <p class="courses"> <span class="left-item-color"> Courses</span> <span class="courses-margin"> 42 </span> </p>
+
+      </div>
+
+      <div class="instructor-box-item">
+
+        <img src="https://i.ibb.co/M8CCvj4/avatar-14.jpg" alt="" class="instructor-image">
+        <h3 class="instructor-name">Esther Howard</h3>
+        <h5 class="instructor-position">Developer and Instructor</h5>
+        <p class="students border-bottom"> <span class="left-item-color">Students </span> <span class="student-margin">
+            26,060 </span> </p>
+        <p class="rating border-bottom"> <span class="left-item-color">Instructor Rating </span>
+          <span class="rating-color  rating-margin"> 4.5 &#9733; </span>
+        </p>
+        <p class="courses"> <span class="left-item-color">Courses</span> <span class="courses-margin"> &nbsp; 3 </span>
+        </p>
+
+      </div>
+
+      <div class="instructor-box-item">
+
+        <img src="https://i.ibb.co/ySnd3t9/avatar-15.jpg" alt="" class="instructor-image">
+        <h3 class="instructor-name">Guy Hawkins</h3>
+        <h5 class="instructor-position">Professional Web Developer</h5>
+        <p class="students border-bottom"> <span class="left-item-color">Students </span> <span class="student-margin">
+            2,345 </span> </p>
+        <p class="rating border-bottom"> <span class="left-item-color">Instructor Rating </span>
+          <span class="rating-color  rating-margin"> 4.5 &#9733; </span>
+        </p>
+        <p class="courses"> <span class="left-item-color">Courses</span> <span class="courses-margin"> &nbsp; 2 </span>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

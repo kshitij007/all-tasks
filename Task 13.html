@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: silver;
+            --shadow: 1px 1px 3px white;
+            --bg-color: white;
+            --bod: 2px solid white;
+            --bod-bot: 1px solid silver;
+            --bod-rad: 10px;
+        }
+
+        .main-container {
+            display: flex;
+            background-color: rgba(192, 192, 192, 0.527);
+            padding: 0px 120px;
+        }
+
+        .aside {
+            width: 300px;
+            margin: 20px;
+            /* border: 2px solid black; */
+        }
+
+        .about {
+            border: var(--bod);
+            background-color: var(--bg-color);
+            box-shadow: var(--shadow);
+            padding: 20px;
+            width: 227px;
+            margin: 0px auto;
+            padding-bottom: 30px;
+            border-radius: var(--bod-rad);
+        }
+
+        .about-heading {
+            font-size: 23px;
+            line-height: 0px;
+        }
+
+        .about-content {
+            font-size: 18px;
+        }
+
+        .basic-course-details {
+            border: var(--bod);
+            background-color: var(--bg-color);
+            box-shadow: var(--shadow);
+            border-radius: var(--bod-rad);
+            width: 227px;
+            margin: 15px auto;
+            padding: 20px;
+            padding-top: 30px;
+            height: 180px;
+        }
+
+        .number {
+            line-height: 0px;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: -20px;
+        }
+
+        .alpha {
+            font-size: 14px;
+            line-height: 0px;
+            padding-bottom: 20px;
+            font-weight: normal;
+            color: rgb(87, 85, 85);
+        }
+
+        .bottom-border {
+            border-bottom: var(--bod-bot);
+        }
+
+        .icon {
+            position: relative;
+            left: 216px;
+            top: -65px;
+            font-size: 20px;
+        }
+
+        .extra-margin {
+            position: relative;
+            left: -9px;
+        }
+
+        /* section */
+
+
+        .section {
+            width: 700px;
+            border: var(--bod);
+            background-color: var(--bg-color);
+            box-shadow: var(--shadow);
+            border-radius: var(--bod-rad);
+            margin: 20px;
+            margin-bottom: 0px;
+        }
+
+        .main-heading {
+            padding-bottom: 8px;
+            padding-left: 20px;
+            border-bottom: var(--bod-bot);
+        }
+
+        .badge {
+            background-color: #43e9a445;
+            color: #09df86;
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+
+        .total-course {
+            font-size: 14px;
+            color: var(--primary-color);
+            font-weight: normal;
+        }
+
+        .course-name-and-details {
+            height: 76px;
+            margin-top: 18px;
+            border-bottom: var(--bod-bot);
+            padding: 0px 20px;
+        }
+
+        .no-bottom-border {
+            border-bottom: none;
+        }
+
+        .course-logo {
+            height: 58px;
+        }
+
+        .course-content {
+            position: relative;
+            top: -80px;
+            left: 120px;
+
+        }
+
+        .extra-info {
+            font-size: 14px;
+            margin-top: -10px;
+        }
+
+        .star-icon {
+            font-size: 10px;
+        }
+
+        .star {
+            margin-left: 10px;
+            color: orange;
+        }
+
+        .level {
+            margin-left: 10px;
+
+        }
+
+        .level-icon {
+            color: blueviolet;
+        }
+
+        .fade-star,
+        .fade {
+            color: silver;
+        }
+
+        .side-dots {
+            position: relative;
+            left: 518px;
+            top: -46px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <aside class="aside">
+            <div class="about">
+                <h3 class="about-heading">About me</h3>
+                <p class="about-content">I am an Innovation designer focussing on UX/UI based in Berlin. As a creative
+                    resident at Figma explored the city of the future and how new technologies like AI, voice control,
+                    and augmented reality will change our interfaces.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+
+            <div class="basic-course-details">
+                <p class="cource">
+                <p class="number">32</p>
+                <p class="alpha bottom-border">Courses</p>
+                <span class="icon"><i class="fal fa-file-alt"></i></span>
+                </p>
+
+                <p class="students">
+                <p class="number">11,604</p>
+                <p class="alpha bottom-border">Total Students</p>
+                <span class="icon"><i class="fal fa-user-friends extra-margin"></i></span>
+                </p>
+
+                <p class="reviews">
+                <p class="number">12,230</p>
+                <p class="alpha">Reviews</p>
+                <span class="icon"><i class="fal fa-star extra-margin"></i></span>
+                </p>
+            </div>
+        </aside>
+
+        <section class="section">
+            <div class="all-courses">
+                <h3 class="main-heading">My Courses <span class="total-course">(12)</span></h3>
+
+                <div class="course-name-and-details">
+
+                    <div class="course-img">
+                        <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-wordpress.jpg"
+                            alt="" class="course-logo">
+                    </div>
+
+                    <div class="course-content">
+                        <h4 class="course-heading">Create a Website with WordPress <span class="badge">New</span></h4>
+                        <p class="extra-info">
+
+                            <span class="time"> <i class="fal fa-clock clock-icon"></i> 3h 30m</span>
+                            <span class="level"> <i class="fad fa-signal-alt-1 level-icon"></i> Beginner</span>
+                            <span class="star">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                4.5 <span class="fade">(1,345)</span></span>
+                        </p>
+                        <i class="fal fa-ellipsis-v side-dots"></i>
+                    </div>
+                </div>
+
+                <div class="course-name-and-details">
+
+                    <div class="course-img">
+                        <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-javascript.jpg"
+                            alt="" class="course-logo">
+                    </div>
+
+                    <div class="course-content">
+                        <h4 class="course-heading">JavaScript Fundamentals </h4>
+                        <p class="extra-info">
+                            <span class="time"> <i class="fal fa-clock clock-icon"></i> 1h 20m</span>
+                            <span class="level"> <i class="fad fa-signal-alt-3 level-icon"></i> Advance</span>
+                            <span class="star">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon fade-star"></i>
+                                4 <span class="fade">(1,000)</span></span>
+                        </p>
+                        <i class="fal fa-ellipsis-v side-dots"></i>
+                    </div>
+                </div>
+
+                <div class="course-name-and-details">
+
+                    <div class="course-img">
+                        <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-angular.jpg"
+                            alt="" class="course-logo">
+                    </div>
+
+                    <div class="course-content">
+                        <h4 class="course-heading">AngularJS Forms using Bootstrap </h4>
+                        <p class="extra-info">
+                            <span class="time"> <i class="fal fa-clock clock-icon"></i> 2h 30m</span>
+                            <span class="level"> <i class="fad fa-signal-alt-1 level-icon"></i> Beginner</span>
+                            <span class="star">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                4.5 <span class="fade">(900)</span></span>
+                        </p>
+                        <i class="fal fa-ellipsis-v side-dots"></i>
+                    </div>
+                </div>
+
+                <div class="course-name-and-details">
+
+                    <div class="course-img">
+                        <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-python.jpg"
+                            alt="" class="course-logo">
+                    </div>
+
+                    <div class="course-content">
+                        <h4 class="course-heading">Get Start with Python from base </h4>
+                        <p class="extra-info">
+                            <span class="time"> <i class="fal fa-clock clock-icon"></i> 1h </span>
+                            <span class="level"> <i class="fad fa-signal-alt-2 level-icon"></i> Intermediate</span>
+                            <span class="star">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                4.5 <span class="fade">(1,900)</span></span>
+                        </p>
+                        <i class="fal fa-ellipsis-v side-dots"></i>
+                    </div>
+                </div>
+
+                <div class="course-name-and-details">
+
+                    <div class="course-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1a0tMftspOOz0OJtVHViGmjWo9rF9u6MBgA&usqp=CAU"
+                            alt="" class="course-logo">
+                    </div>
+
+                    <div class="course-content">
+                        <h4 class="course-heading">The Ultimaate Advanced Laravel.. </h4>
+                        <p class="extra-info">
+                            <span class="time"> <i class="fal fa-clock clock-icon"></i> 2h 30m</span>
+                            <span class="level"> <i class="fad fa-signal-alt-3 level-icon"></i> Advance</span>
+                            <span class="star">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                4.5 <span class="fade">(1,900)</span></span>
+                        </p>
+                        <i class="fal fa-ellipsis-v side-dots"></i>
+                    </div>
+                </div>
+
+                <div class="course-name-and-details no-bottom-border">
+
+                    <div class="course-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6P1XT8Pf-Cx5qyZrU5X3f_Xr8pOWrKKspDw&usqp=CAU"
+                            alt="" class="course-logo">
+                    </div>
+
+                    <div class="course-content">
+                        <h4 class="course-heading">The Ultimaate Advanced Getsby Course.. </h4>
+                        <p class="extra-info ">
+                            <span class="time"> <i class="fal fa-clock clock-icon"></i> 2h 30m</span>
+                            <span class="level"> <i class="fad fa-signal-alt-1 level-icon"></i> Beginner</span>
+                            <span class="star">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon fade-star"></i>
+                                <i class="fas fa-star star-icon fade-star"></i>
+                                3.5 <span class="fade">(4,900)</span></span>
+                        </p>
+                        <i class="fal fa-ellipsis-v side-dots"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
